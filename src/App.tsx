@@ -16,7 +16,7 @@ function App() {
 
       <div className="inset-0 z-0 lg:mt-[98px] mt-[70px] lg:h-[calc(100vh-80px)] h-[calc(100vh-72px)]">
         <img
-          src={"/public/images/cover.jpg"}
+          src={"/images/cover.jpg"}
           alt="Background"
           className="h-full w-full object-cover"
         />
@@ -131,7 +131,7 @@ function App() {
             <div className="mt-2 flex items-center">
               <div className="mr-4 bg-yellow-300 p-1">
                 <img
-                  src="/public/icons/phone-line.png"
+                  src="/icons/phone-line.png"
                   alt="Phone icon"
                   className="text-yellow-300"
                 />
@@ -145,7 +145,7 @@ function App() {
             <div className="mt-2 flex items-center">
               <div className="mr-4 bg-yellow-300 p-1">
                 <img
-                  src="/public/icons/mail-line.png"
+                  src="/icons/mail-line.png"
                   alt="Mail icon"
                   className="text-yellow-300"
                 />
@@ -159,7 +159,7 @@ function App() {
             <div className="mt-2 flex items-center">
               <div className="mr-4 bg-yellow-300 p-1">
                 <img
-                  src="/public/icons/time-line.png"
+                  src="/icons/time-line.png"
                   alt="Clock icon"
                   className="text-yellow-300"
                 />
