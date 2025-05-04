@@ -11,7 +11,10 @@ function App() {
   const { width } = useWindowSize();
 
   return (
-    <div className="min-w-screen flex h-full min-h-screen w-full flex-col bg-white text-black">
+    <div
+      id="top"
+      className="min-w-screen flex h-full min-h-screen w-full flex-col bg-white text-black"
+    >
       <Navbar />
 
       <div className="inset-0 z-0 lg:mt-[98px] mt-[70px] lg:h-[calc(100vh-80px)] h-[calc(100vh-72px)]">
@@ -37,30 +40,30 @@ function App() {
         </p>
         <div className="mx-auto mt-[20px] h-1 w-[100px] bg-yellow-300"></div>
 
-        <div className="mx-auto mt-[50px] flex max-w-[800px] flex-wrap">
-          <div className="mb-4 flex w-full flex-col md:flex-row">
+        <div className="mx-auto mt-[50px] flex max-w-[800px] flex-wrap px-4">
+          <div className="mb-4 flex w-full flex-col md:flex-row lg:gap-0 gap-4">
             <Card
               title={t("card_1_title")}
               text={t("card_1_text")}
-              imgSrc="/public/icons/time-line.png"
+              imgSrc="/icons/time-line.png"
             />
             <Card
               title={t("card_2_title")}
               text={t("card_2_text")}
-              imgSrc="/public/icons/shield-cross-line.png"
+              imgSrc="/icons/shield-cross-line.png"
             />
           </div>
 
-          <div className="mb-4 flex w-full flex-col md:flex-row">
+          <div className="mb-4 flex w-full flex-col md:flex-row lg:gap-0 gap-4">
             <Card
               title={t("card_3_title")}
               text={t("card_3_text")}
-              imgSrc="/public/icons/money-euro-circle-line.png"
+              imgSrc="/icons/money-euro-circle-line.png"
             />
             <Card
               title={t("card_4_title")}
               text={t("card_4_text")}
-              imgSrc="/public/icons/taxi-line.png"
+              imgSrc="/icons/taxi-line.png"
             />
           </div>
 
@@ -68,7 +71,7 @@ function App() {
             <Card
               title={t("card_5_title")}
               text={t("card_5_text")}
-              imgSrc="/public/icons/time-line.png"
+              imgSrc="/icons/time-line.png"
             />
           </div>
         </div>
@@ -80,31 +83,28 @@ function App() {
         </p>
         <div className="mx-auto mt-[20px] h-1 w-[100px] bg-yellow-300"></div>
 
-        <div className="mx-auto mt-[50px] flex max-w-[1000px] flex-wrap px-4">
+        <div className="mx-auto mt-[50px] flex max-w-[1000px] flex-wrap px-8 lg:px-4">
           <div className="flex w-full flex-col gap-8 md:flex-row">
             <CardReview
               text={t("review_1_text")}
               name={t("review_1_name")}
-              imgSrc="public/icons/time-line.png"
+              imgSrc="/icons/time-line.png"
             />
             <CardReview
               text={t("review_2_text")}
               name={t("review_2_name")}
-              imgSrc="public/icons/shield-cross-line.png"
+              imgSrc="/icons/shield-cross-line.png"
             />
             <CardReview
               text={t("review_3_text")}
               name={t("review_3_name")}
-              imgSrc="public/icons/time-line.png"
+              imgSrc="/icons/time-line.png"
             />
           </div>
         </div>
       </div>
 
-      <div
-        id="footer"
-        className="bg-[#1B1B1B] px-6 pb-10 pt-28 text-white text-center lg:text-start"
-      >
+      <div className="bg-[#1B1B1B] px-6 pb-10 pt-28 text-white text-center lg:text-start">
         <div className="mx-auto flex max-w-[1000px] flex-col gap-14 pb-24 lg:flex-row">
           <div className="w-full">
             <p className="mb-[40px] border-b-[1px] border-yellow-300 pb-[10px] text-lg font-bold uppercase">
@@ -136,7 +136,7 @@ function App() {
                   className="text-yellow-300"
                 />
               </div>
-              <p>095876 3084</p>
+              <p>+385 95 876 3084</p>
             </div>
 
             <p className="font-bold uppercase text-start mt-4">
@@ -169,7 +169,7 @@ function App() {
           </div>
         </div>
       </div>
-      <div className="bg-[#1B1B1B] p-6">
+      <div className="bg-[#1B1B1B] p-6" id="footer">
         <div className="h-[1px] w-full bg-[#ADADAD]"></div>
         <p className="pt-[10px] text-center text-sm text-[#ADADAD]">
           {t("footer_copyright")}
@@ -179,8 +179,8 @@ function App() {
       <a
         href={
           width && width <= 768
-            ? "whatsapp://send?phone=1234567890"
-            : "https://wa.me/1234567890"
+            ? "whatsapp://send?phone=+385958763084"
+            : "https://wa.me/+385958763084"
         }
         className="fixed bottom-8 right-4 z-[99999] rounded-full border-none bg-[white] p-3 shadow-2xl lg:right-8 lg:p-4"
       >
@@ -192,11 +192,11 @@ function App() {
       </a>
 
       <a
-        href="tel:+15551234567"
+        href="tel:+385958763084"
         className="fixed bottom-28 right-4 z-[99999] rounded-full border-none bg-[#25D366] p-3 shadow-2xl lg:bottom-32 lg:right-8 lg:p-4"
       >
         <img
-          src="/public/icons/phone-line-white.png"
+          src="/icons/phone-line-white.png"
           alt="Phone icon"
           className="w-[42px]"
         />

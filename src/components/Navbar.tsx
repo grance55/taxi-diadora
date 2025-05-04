@@ -18,16 +18,16 @@ export default function Navbar() {
   return (
     <>
       <div className="fixed z-50 hidden w-full items-center justify-between bg-[#1B1B1B] px-10 py-7 text-white lg:flex">
-        <div className="flex gap-2 flex-row items-center">
+        <a href="#top" className="flex gap-2 flex-row items-center">
           <img
             className="w-[22px] h-[22px]"
-            src={"/public/icons/taxi-fill.png"}
+            src={"/icons/taxi-fill.png"}
             alt="Description of the image"
           />
           <p className="text-[28px] font-bold uppercase text-yellow-300">
             DIADORA
           </p>
-        </div>
+        </a>
         <div className="z-50 flex gap-8">
           <a href="#aboutUs" className="hover:text-yellow-300">
             <p className="font-bold uppercase">{t("navbar-aboutUs")}</p>
@@ -88,16 +88,16 @@ export default function Navbar() {
 
       <div className="fixed z-[9999999] w-full bg-[#1B1B1B] px-4 py-4 text-white lg:hidden">
         <div className="flex items-center justify-between">
-          <div className="flex gap-2 flex-row items-center">
+          <a href="#top" className="flex gap-2 flex-row items-center">
             <img
               className="w-[22px] h-[22px]"
-              src={"/public/icons/taxi-fill.png"}
+              src={"/icons/taxi-fill.png"}
               alt="Description of the image"
             />
             <p className="text-xl font-bold uppercase text-yellow-300">
               DIADORA
             </p>
-          </div>
+          </a>
 
           <button type="button" onClick={toggleMenu} className="p-2">
             <div className="relative h-6 w-6">

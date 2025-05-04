@@ -7,7 +7,7 @@ type CardProps = {
 export const CardReview = ({ name, text }: CardProps) => {
   return (
     <div className="w-full lg:w-1/2">
-      <div className="my-4 h-full rounded bg-[#333333] p-6 pb-0">
+      <div className="my-4 h-full rounded bg-[#333333] py-6 px-10 lg:p-6 pb-0">
         <img
           src="/icons/double-quotes-l.png"
           alt="Description of the image"
