@@ -39,52 +39,33 @@ export default function Navbar() {
             <p className="font-bold uppercase">{t("navbar-contact")}</p>
           </a>
           <button
-            className="hover:text-yellow-300 flex font-bold uppercase items-center"
-            type="button"
-            onClick={() => setDisplayLanguageModal((prevState) => !prevState)}
-          >
-            {currentLanguage}{" "}
-            <svg
-              className="w-2.5 h-2.5 ms-3"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 10 6"
-            >
-              <path
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="m1 1 4 4 4-4"
-              />
-            </svg>
-          </button>
-        </div>
-      </div>
-
-      {displayLanguageModal ? (
-        <div className="fixed top-[70px] right-[30px] bg-yellow-300 z-[99999] flex flex-col  rounded">
-          <button
-            className="px-8 py-2  hover:bg-[#F5F5F5] rounded"
+            className="cursor-pointer"
             onClick={() => {
               changeLanguage("hr");
               setDisplayLanguageModal(false);
             }}
           >
-            Hrvatski
+            <img
+              src={"/icons/hr.svg"}
+              alt="Description of the image"
+              className="w-[22px] h-[22px] inline-block"
+            />
           </button>
           <button
-            className="px-8 py-2 hover:bg-[#F5F5F5] rounded"
+            className="cursor-pointer"
             onClick={() => {
               changeLanguage("en");
               setDisplayLanguageModal(false);
             }}
           >
-            English
+            <img
+              src={"/icons/en.svg"}
+              alt="Description of the image"
+              className="w-[22px] h-[22px] inline-block"
+            />
           </button>
         </div>
-      ) : null}
+      </div>
 
       <div className="fixed z-[9999999] w-full bg-[#1B1B1B] px-4 py-4 text-white lg:hidden">
         <div className="flex items-center justify-between">
@@ -99,25 +80,54 @@ export default function Navbar() {
             </p>
           </a>
 
-          <button type="button" onClick={toggleMenu} className="p-2">
-            <div className="relative h-6 w-6">
-              <span
-                className={`absolute left-0 top-0 h-0.5 w-6 bg-white transition-transform duration-300 ${
-                  isMenuOpen ? "translate-y-2.5 rotate-45" : ""
-                }`}
-              ></span>
-              <span
-                className={`absolute left-0 top-2.5 h-0.5 w-6 bg-white transition-opacity duration-300 ${
-                  isMenuOpen ? "opacity-0" : "opacity-100"
-                }`}
-              ></span>
-              <span
-                className={`absolute left-0 top-5 h-0.5 w-6 bg-white transition-transform duration-300 ${
-                  isMenuOpen ? "-translate-y-2.5 -rotate-45" : ""
-                }`}
-              ></span>
-            </div>
-          </button>
+          <div className="flex items-center gap-4">
+            <button
+              className="cursor-pointer"
+              onClick={() => {
+                changeLanguage("hr");
+                setDisplayLanguageModal(false);
+              }}
+            >
+              <img
+                src={"/icons/hr.svg"}
+                alt="Description of the image"
+                className="w-[22px] h-[22px] inline-block"
+              />
+            </button>
+            <button
+              className="cursor-pointer"
+              onClick={() => {
+                changeLanguage("en");
+                setDisplayLanguageModal(false);
+              }}
+            >
+              <img
+                src={"/icons/en.svg"}
+                alt="Description of the image"
+                className="w-[22px] h-[22px] inline-block"
+              />
+            </button>
+
+            <button type="button" onClick={toggleMenu} className="p-2">
+              <div className="relative h-6 w-6">
+                <span
+                  className={`absolute left-0 top-0 h-0.5 w-6 bg-white transition-transform duration-300 ${
+                    isMenuOpen ? "translate-y-2.5 rotate-45" : ""
+                  }`}
+                ></span>
+                <span
+                  className={`absolute left-0 top-2.5 h-0.5 w-6 bg-white transition-opacity duration-300 ${
+                    isMenuOpen ? "opacity-0" : "opacity-100"
+                  }`}
+                ></span>
+                <span
+                  className={`absolute left-0 top-5 h-0.5 w-6 bg-white transition-transform duration-300 ${
+                    isMenuOpen ? "-translate-y-2.5 -rotate-45" : ""
+                  }`}
+                ></span>
+              </div>
+            </button>
+          </div>
         </div>
         {isMenuOpen ? (
           <div
@@ -166,6 +176,11 @@ export default function Navbar() {
                   toggleMenu();
                 }}
               >
+                <img
+                  src={"/icons/hr.svg"}
+                  alt="Description of the image"
+                  className="w-[22px] h-[22px] inline-block mr-2"
+                />
                 HR
               </button>
               <button
@@ -176,6 +191,11 @@ export default function Navbar() {
                   toggleMenu();
                 }}
               >
+                <img
+                  src={"/icons/en.svg"}
+                  alt="Description of the image"
+                  className="w-[22px] h-[22px] inline-block mr-2"
+                />
                 EN
               </button>
             </div>
