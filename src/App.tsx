@@ -4,6 +4,7 @@ import { CardReview } from "./components/CardReview";
 import Navbar from "./components/Navbar";
 import { useTranslation } from "react-i18next";
 import { useWindowSize } from "./helpers/useWindowSize";
+import { CardDestination } from "./components/CardDestination";
 
 function App() {
   const { t } = useTranslation();
@@ -72,6 +73,31 @@ function App() {
               title={t("card_5_title")}
               text={t("card_5_text")}
               imgSrc="/icons/time-line.png"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div id="destinations" className="bg-yellow-300 py-[100px] text-white">
+        <p className="text-center text-[32px] font-bold text-[#1B1B1B]">
+          {t("destinations_title")}
+        </p>
+        <div className="mx-auto mt-[20px] h-1 w-[100px] bg-[#1B1B1B]"></div>
+
+        <div className="mx-auto mt-[50px] flex max-w-[1000px] flex-wrap px-8 lg:px-4">
+          <div className="flex w-full flex-col gap-8 md:flex-row">
+            <CardDestination text={t("airports")} imgSrc="/images/pista.jpg" />
+            <CardDestination text={t("marine")} imgSrc="/images/marina.png" />
+            <CardDestination
+              text={t("festivals")}
+              imgSrc="/images/festival.jpg"
+            />
+          </div>
+          <div className="flex flex-col gap-8 md:flex-row mt-8 lg:mx-auto w-full lg:w-auto">
+            <CardDestination text={t("cities")} imgSrc="/images/gradovi.jpg" />
+            <CardDestination
+              text={t("national_parks")}
+              imgSrc="/images/priroda.jpg"
             />
           </div>
         </div>
@@ -190,7 +216,6 @@ function App() {
           className="w-[42px]"
         />
       </a>
-
       <a
         href="tel:+385958763084"
         className="fixed bottom-28 right-4 z-[99999] rounded-full border-none bg-[#25D366] p-3 shadow-2xl lg:bottom-32 lg:right-8 lg:p-4"
