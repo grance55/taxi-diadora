@@ -4,8 +4,6 @@ import { useTranslation } from "react-i18next";
 export default function Navbar() {
   const { t, i18n } = useTranslation();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [displayLanguageModal, setDisplayLanguageModal] = useState(false);
-  const currentLanguage = i18n.language;
 
   const changeLanguage = (lng: string) => {
     i18n.changeLanguage(lng);
@@ -42,7 +40,6 @@ export default function Navbar() {
             className="cursor-pointer"
             onClick={() => {
               changeLanguage("hr");
-              setDisplayLanguageModal(false);
             }}
           >
             <img
@@ -55,7 +52,6 @@ export default function Navbar() {
             className="cursor-pointer"
             onClick={() => {
               changeLanguage("en");
-              setDisplayLanguageModal(false);
             }}
           >
             <img
@@ -85,7 +81,6 @@ export default function Navbar() {
               className="cursor-pointer"
               onClick={() => {
                 changeLanguage("hr");
-                setDisplayLanguageModal(false);
               }}
             >
               <img
@@ -98,7 +93,6 @@ export default function Navbar() {
               className="cursor-pointer"
               onClick={() => {
                 changeLanguage("en");
-                setDisplayLanguageModal(false);
               }}
             >
               <img
@@ -172,7 +166,6 @@ export default function Navbar() {
                 className="w-full font-bold uppercase px-2 py-3 border-b border-gray-700 text-left"
                 onClick={() => {
                   changeLanguage("hr");
-                  setDisplayLanguageModal(false);
                   toggleMenu();
                 }}
               >
@@ -187,7 +180,6 @@ export default function Navbar() {
                 className="font-bold uppercase px-2 py-3"
                 onClick={() => {
                   changeLanguage("en");
-                  setDisplayLanguageModal(false);
                   toggleMenu();
                 }}
               >
