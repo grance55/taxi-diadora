@@ -41,5 +41,20 @@
   "marine": "Marine",
   "festivals": "Festivali",
   "cities": "Gradovi",
-  "national_parks": "Nacionalni p. i p. prirode"
+  "national_parks": "Nacionalni p. i p. prirode",
+  "phone": "Telefon",
+  "book_now": "Rezerviraj sada",
+  "book_now_title": "Rezervirajte svoju vožnju sada",
+  "book_now_text": "Trebate vožnju? Ispunite obrazac i jedan od naših vozača će vas pokupiti u nekoliko minuta. Radimo 24/7, 365 dana u godini.",
+  "sending": "Slanje...",
+  "pickup_location": "Mjesto preuzimanja",
+  "destination": "Odredište",
+  "date": "Datum",
+  "time": "Vrijeme",
+  "something_went_wrong": "Nešto je pošlo po zlu.",
+  "booking_successful": "Hvala! Vaš upit je poslan.",
+  "pickup_location_placeholder": "Unesite adresu preuzimanja",
+  "destination_placeholder": "Unesite adresu odredišta",
+  "phone_placeholder": "Unesite svoj broj telefona",
+  "validation_error": "Molimo ispunite formu, sva polja su obavezna!"
 }

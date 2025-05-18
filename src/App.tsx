@@ -5,11 +5,18 @@ import Navbar from "./components/Navbar";
 import { useTranslation } from "react-i18next";
 import { useWindowSize } from "./helpers/useWindowSize";
 import { CardDestination } from "./components/CardDestination";
+import EmailContactForm from "./components/EmailContactForm";
+import { useEffect } from "react";
+import emailjs from "@emailjs/browser";
 
 function App() {
   const { t } = useTranslation();
-
   const { width } = useWindowSize();
+
+  useEffect(() => {
+    // Initialize EmailJS with your public key
+    emailjs.init(import.meta.env.VITE_EMAILJS_PUBLIC_KEY);
+  }, []);
 
   return (
     <div
@@ -78,7 +85,19 @@ function App() {
         </div>
       </div>
 
-      <div id="destinations" className="bg-yellow-300 py-[100px] text-white">
+      <div className="bg-yellow-300 py-[100px] flex">
+        <div className="mx-auto flex max-w-[800px] flex-col items-center justify-center gap-8 px-4 text-black lg:flex-row">
+          <div className="max-w-[400px]">
+            <p className="text-[32px] font-bold mb-[20px]">
+              {t("book_now_title")}
+            </p>
+            <p>{t("book_now_text")}</p>
+          </div>
+          <EmailContactForm />
+        </div>
+      </div>
+
+      <div id="destinations" className=" py-[100px] text-white">
         <p className="text-center text-[32px] font-bold text-[#1B1B1B]">
           {t("destinations_title")}
         </p>

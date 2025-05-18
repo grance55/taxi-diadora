@@ -41,5 +41,20 @@
   "marine": "Marine",
   "festivals": "Festivals",
   "cities": "Cities",
-  "national_parks": "National Parks"
+  "national_parks": "National Parks",
+  "phone": "Phone Number",
+  "book_now": "Book Now",
+  "book_now_title": "Book Your Ride Now",
+  "book_now_text": "Need a ride? Fill out the form and one of ours drivers will pick you up in minutes. We operate 24/7, 365 days a year.",
+  "sending": "Sending...",
+  "pickup_location": "Pickup Location",
+  "destination": "Destination",
+  "date": "Date",
+  "time": "Time",
+  "something_went_wrong": "Something went wrong.",
+  "booking_successful": "Thank you! Your request has been sent.",
+  "pickup_location_placeholder": "Enter your pickup address",
+  "destination_placeholder": "Enter your destination address",
+  "phone_placeholder": "Enter your phone number",
+  "validation_error": "Please fill out the form, all fields are required!"
 }
