@@ -86,7 +86,7 @@ function App() {
       </div>
 
       <div className="bg-yellow-300 py-[100px] flex">
-        <div className="mx-auto flex max-w-[800px] flex-col items-center justify-center gap-8 px-4 text-black lg:flex-row">
+        <div className="mx-4 md:mx-auto flex max-w-[800px] flex-col items-center justify-center gap-8 px-4 text-black lg:flex-row">
           <div className="max-w-[400px]">
             <p className="text-[32px] font-bold mb-[20px]">
               {t("book_now_title")}

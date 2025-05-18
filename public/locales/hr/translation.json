@@ -62,5 +62,10 @@
   "destination_required": "Odredište je obavezno",
   "date_required": "Datum je obavezan",
   "time_required": "Vrijeme je obavezno",
-  "invalid_phone": "Unesite ispravan broj telefona"
+  "invalid_phone": "Unesite ispravan broj telefona",
+  "invalid_email": "Unesite ispravan email",
+  "email": "Email",
+  "email_placeholder": "Unesite svoju email adresu",
+  "mmessage": "Poruka",
+  "message_placeholder": "Unesite svoju poruku"
 }

@@ -9,6 +9,8 @@ interface FormData {
   date: string;
   time: string;
   phoneNumber: string;
+  email?: string | null;
+  message?: string | null;
 }
 
 interface FormErrors {
@@ -17,6 +19,8 @@ interface FormErrors {
   date: string;
   time: string;
   phoneNumber: string;
+  email: string;
+  message: string;
 }
 
 interface StatusState {
@@ -36,6 +40,8 @@ export default function RideBookingForm() {
     date: new Date().toISOString().split("T")[0],
     time: "12:00",
     phoneNumber: "",
+    email: "",
+    message: "",
   });
 
   const [status, setStatus] = useState<StatusState>({
@@ -50,6 +56,8 @@ export default function RideBookingForm() {
     date: "",
     time: "",
     phoneNumber: "",
+    email: "",
+    message: "",
   });
 
   // Clear error for a field when the user corrects it
@@ -86,6 +94,8 @@ export default function RideBookingForm() {
       date: new Date().toISOString().split("T")[0],
       time: "12:00",
       phoneNumber: "",
+      email: "",
+      message: "",
     });
     setFormErrors({
       pickupLocation: "",
@@ -93,6 +103,8 @@ export default function RideBookingForm() {
       date: "",
       time: "",
       phoneNumber: "",
+      email: "",
+      message: "",
     });
   };
 
@@ -118,6 +130,15 @@ export default function RideBookingForm() {
     ) {
       errors.phoneNumber =
         t("invalid_phone") || "Please enter a valid phone number";
+    }
+
+    const emailRegex =
+      /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    if (
+      formData?.email &&
+      !emailRegex.test(formData.email.replace(/\s+/g, ""))
+    ) {
+      errors.email = t("invalid_email") || "Please enter a valid email address";
     }
 
     // Date validation - ensure it's not in the past
@@ -180,7 +201,7 @@ export default function RideBookingForm() {
   };
 
   return (
-    <div className="bg-white p-8 rounded-lg shadow-md min-w-[400px]">
+    <div className="bg-white p-8 rounded-lg shadow-md w-full lg:min-w-[400px]">
       {/* Global error message */}
       {status.info.error && !status.submitting && (
         <div className="mb-4 p-4 bg-red-100 text-red-700 rounded-md">
@@ -248,8 +269,8 @@ export default function RideBookingForm() {
             )}
           </div>
 
-          <div className="flex mb-4 space-x-4">
-            <div className="w-1/2">
+          <div className="flex mb-4 space-x-4 flex-col md:flex-row">
+            <div className="md:w-1/2 mr-0 md:mr-2 mb-4 md:mb-0">
               <label
                 htmlFor="date"
                 className="block font-medium mb-2 text-gray-800"
@@ -276,7 +297,7 @@ export default function RideBookingForm() {
               )}
             </div>
 
-            <div className="w-1/2">
+            <div className="md:w-1/2 ml-0 md:ml-2">
               <label
                 htmlFor="time"
                 className="block font-medium mb-2 text-gray-800"
@@ -327,6 +348,47 @@ export default function RideBookingForm() {
                 {formErrors.phoneNumber}
               </p>
             )}
+          </div>
+
+          <div className="mb-6">
+            <label
+              htmlFor="email"
+              className="block font-medium mb-2 text-gray-800"
+            >
+              {t("email")}
+            </label>
+            <input
+              id="email"
+              type="email"
+              name="email"
+              placeholder={t("email_placeholder")}
+              value={formData.email}
+              onChange={handleChange}
+              className={`w-full p-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-300 ${
+                formErrors.email ? "border-red-500" : "border-gray-300"
+              }`}
+            />
+            {formErrors.email && (
+              <p className="text-red-500 text-sm mt-1">{formErrors.email}</p>
+            )}
+          </div>
+
+          <div className="mb-6">
+            <label
+              htmlFor="message"
+              className="block font-medium mb-2 text-gray-800"
+            >
+              {t("message")}
+            </label>
+            <input
+              id="message"
+              type="text"
+              name="message"
+              placeholder={t("message_placeholder")}
+              value={formData.message}
+              onChange={handleChange}
+              className={`w-full p-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-300 border-gray-300`}
+            />
           </div>
 
           <div className="flex gap-4">

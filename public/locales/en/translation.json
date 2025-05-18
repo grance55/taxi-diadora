@@ -62,5 +62,10 @@
   "destination_required": "Destination is required",
   "date_required": "Date is required",
   "time_required": "Time is required",
-  "invalid_phone": "Phone number is invalid"
+  "invalid_phone": "Phone number is invalid",
+  "invalid_email": "Email is invalid",
+  "email": "Email",
+  "email_placeholder": "Enter your email address",
+  "message": "Message",
+  "message_placeholder": "Enter your message"
 }
