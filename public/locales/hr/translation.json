@@ -9,7 +9,7 @@
   "card_2_title": "Sigurnost na prvom mjestu",
   "card_2_text": "Svi naši vozači su licencirani profesionalci s godinama iskustva i čistim dosjeima.",
   "card_3_title": "Poštene cijene",
-  "card_3_text": "Transparentne cijene bez skrivenih troškova. Plaćate samo ono što vidite u aplikaciji.",
+  "card_3_text": "Transparentne cijene bez skrivenih troškova",
   "card_4_title": "Moderan vozni park",
   "card_4_text": "Birajte između našeg asortimana čistih, udobnih i dobro održavanih vozila.",
   "card_5_title": "Podrška 0-24",
@@ -56,5 +56,11 @@
   "pickup_location_placeholder": "Unesite adresu preuzimanja",
   "destination_placeholder": "Unesite adresu odredišta",
   "phone_placeholder": "Unesite svoj broj telefona",
-  "validation_error": "Molimo ispunite formu, sva polja su obavezna!"
+  "validation_error": "Molimo ispunite formu, sva polja su obavezna!",
+  "phone_required": "Broj telefona je obavezan",
+  "pickup_location_required": "Mjesto preuzimanja je obavezno",
+  "destination_required": "Odredište je obavezno",
+  "date_required": "Datum je obavezan",
+  "time_required": "Vrijeme je obavezno",
+  "invalid_phone": "Unesite ispravan broj telefona"
 }

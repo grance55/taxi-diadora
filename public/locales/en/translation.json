@@ -9,7 +9,7 @@
   "card_2_title": "Safety First",
   "card_2_text": "All our drivers are licensed professionals with years of experience and clean records.",
   "card_3_title": "Fair Pricing",
-  "card_3_text": "Transparent pricing with no hidden costs. Pay only for what you see in the app.",
+  "card_3_text": "Transparent pricing with no hidden costs.",
   "card_4_title": "Modern Fleet",
   "card_4_text": "Choose from our range of clean, comfortable, and well-maintained vehicles.",
   "card_5_title": "24/7 Support",
@@ -56,5 +56,11 @@
   "pickup_location_placeholder": "Enter your pickup address",
   "destination_placeholder": "Enter your destination address",
   "phone_placeholder": "Enter your phone number",
-  "validation_error": "Please fill out the form, all fields are required!"
+  "validation_error": "Please fill out the form, all fields are required!",
+  "phone_required": "Phone number is required",
+  "pickup_location_required": "Pickup location is required",
+  "destination_required": "Destination is required",
+  "date_required": "Date is required",
+  "time_required": "Time is required",
+  "invalid_phone": "Phone number is invalid"
 }

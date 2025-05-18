@@ -163,7 +163,7 @@ function App() {
             </p>
             <p className="my-4 font-bold uppercase">{t("footer_services_1")}</p>
             <p className="my-4 font-bold uppercase">{t("footer_services_2")}</p>
-            <p className="my-4 font-bold uppercase">{t("footer_services_3")}</p>
+            {/* <p className="my-4 font-bold uppercase">{t("footer_services_3")}</p> */}
             <p className="my-4 font-bold uppercase">{t("footer_services_4")}</p>
           </div>
           <div className="w-full">
