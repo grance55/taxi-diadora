@@ -67,5 +67,8 @@
   "email": "Email",
   "email_placeholder": "Unesite svoju email adresu",
   "message": "Poruka",
-  "message_placeholder": "Unesite svoju poruku"
+  "message_placeholder": "Unesite svoju poruku",
+  "country_code": "** Unesite broj telefona s pozivnim brojem države (npr. +385 za Hrvatsku)",
+  "field_required": "Polja označena * su obavezna",
+  "navbar-bookNow": "Rezerviraj sada"
 }

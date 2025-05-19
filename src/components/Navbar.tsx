@@ -26,7 +26,13 @@ export default function Navbar() {
             DIADORA
           </p>
         </a>
-        <div className="z-50 flex gap-8">
+        <div className="z-50 flex gap-8 items-center">
+          <a
+            href="#bookNow"
+            className="flex-1 bg-yellow-300 hover:bg-yellow-400 text-gray-900 font-bold text-lg py-2 px-4 rounded transition duration-300 cursor-pointer"
+          >
+            {t("navbar-bookNow")}
+          </a>
           <a href="#aboutUs" className="hover:text-yellow-300">
             <p className="font-bold uppercase">{t("navbar-aboutUs")}</p>
           </a>
@@ -134,6 +140,15 @@ export default function Navbar() {
             }}
           >
             <div className="mt-[20px]">
+              <a
+                href="#aboutUs"
+                className="hover:text-yellow-300"
+                onClick={toggleMenu}
+              >
+                <p className="border-b border-gray-700 px-2 py-3 font-bold uppercase">
+                  {t("navbar-bookNow")}
+                </p>
+              </a>
               <a
                 href="#aboutUs"
                 className="hover:text-yellow-300"

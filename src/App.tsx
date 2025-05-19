@@ -85,13 +85,15 @@ function App() {
         </div>
       </div>
 
-      <div className="bg-yellow-300 py-[100px] flex">
+      <div id="bookNow" className="bg-yellow-300 py-[100px] flex">
         <div className="mx-4 md:mx-auto flex max-w-[800px] flex-col items-center justify-center gap-8 px-4 text-black lg:flex-row">
           <div className="max-w-[400px]">
             <p className="text-[32px] font-bold mb-[20px]">
               {t("book_now_title")}
             </p>
             <p>{t("book_now_text")}</p>
+            <p className="mt-[30px] text-[12px]">{t("country_code")}</p>
+            <p className="mt-[30px] text-[12px]">{t("field_required")}</p>
           </div>
           <EmailContactForm />
         </div>

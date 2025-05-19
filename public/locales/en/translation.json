@@ -67,5 +67,8 @@
   "email": "Email",
   "email_placeholder": "Enter your email address",
   "message": "Message",
-  "message_placeholder": "Enter your message"
+  "message_placeholder": "Enter your message",
+  "country_code": "** Enter the phone number with the country code (e.g. +385 for Croatia)",
+  "field_required": "Fields marked with * are required",
+  "navbar-bookNow": "Book Now"
 }

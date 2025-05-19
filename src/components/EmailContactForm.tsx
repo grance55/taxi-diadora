@@ -222,7 +222,7 @@ export default function RideBookingForm() {
               htmlFor="pickupLocation"
               className="block font-medium mb-2 text-gray-800"
             >
-              {t("pickup_location")}
+              {t("pickup_location")}*
             </label>
             <input
               id="pickupLocation"
@@ -248,7 +248,7 @@ export default function RideBookingForm() {
               htmlFor="destination"
               className="block font-medium mb-2 text-gray-800"
             >
-              {t("destination")}
+              {t("destination")}*
             </label>
             <input
               id="destination"
@@ -275,7 +275,7 @@ export default function RideBookingForm() {
                 htmlFor="date"
                 className="block font-medium mb-2 text-gray-800"
               >
-                {t("date")}
+                {t("date")}*
               </label>
               <div className="relative">
                 <input
@@ -302,7 +302,7 @@ export default function RideBookingForm() {
                 htmlFor="time"
                 className="block font-medium mb-2 text-gray-800"
               >
-                {t("time")}
+                {t("time")}*
               </label>
               <div className="relative">
                 <input
@@ -329,13 +329,13 @@ export default function RideBookingForm() {
               htmlFor="phoneNumber"
               className="block font-medium mb-2 text-gray-800"
             >
-              {t("phone")}
+              {t("phone")}*
             </label>
             <input
               id="phoneNumber"
               type="tel"
               name="phoneNumber"
-              placeholder={t("phone_placeholder")}
+              placeholder={"+385 95 876 3084"}
               value={formData.phoneNumber}
               onChange={handleChange}
               className={`w-full p-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-300 ${
