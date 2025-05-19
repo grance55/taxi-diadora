@@ -141,7 +141,7 @@ export default function Navbar() {
           >
             <div className="mt-[20px]">
               <a
-                href="#aboutUs"
+                href="#bookNow"
                 className="hover:text-yellow-300"
                 onClick={toggleMenu}
               >

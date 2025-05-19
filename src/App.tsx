@@ -6,9 +6,10 @@ import { useTranslation } from "react-i18next";
 import { useWindowSize } from "./helpers/useWindowSize";
 import { CardDestination } from "./components/CardDestination";
 import EmailContactForm from "./components/EmailContactForm";
-import { useEffect } from "react";
 import emailjs from "@emailjs/browser";
-import ImageCarousel from "./components/ImageCarousel";
+import { Suspense, lazy, useEffect } from "react";
+
+const ImageCarousel = lazy(() => import("./components/ImageCarousel"));
 
 function App() {
   const { t } = useTranslation();
@@ -27,7 +28,9 @@ function App() {
       <Navbar />
 
       <div className="inset-0 z-0 lg:mt-[98px] mt-[70px] lg:h-[calc(100vh-80px)] h-[calc(100vh-72px)]">
-        <ImageCarousel />
+        <Suspense fallback={<div className="h-full w-full bg-gray-200" />}>
+          <ImageCarousel />
+        </Suspense>
       </div>
 
       <div className="absolute inset-0 z-10 lg:mt-[98px] mt-[70px] flex lg:h-[calc(100vh-80px)] h-[calc(100vh-72px)] flex-col items-center justify-center bg-black/30 text-white backdrop-blur-sm">
