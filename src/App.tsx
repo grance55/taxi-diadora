@@ -8,6 +8,7 @@ import { CardDestination } from "./components/CardDestination";
 import EmailContactForm from "./components/EmailContactForm";
 import { useEffect } from "react";
 import emailjs from "@emailjs/browser";
+import ImageCarousel from "./components/ImageCarousel";
 
 function App() {
   const { t } = useTranslation();
@@ -26,11 +27,7 @@ function App() {
       <Navbar />
 
       <div className="inset-0 z-0 lg:mt-[98px] mt-[70px] lg:h-[calc(100vh-80px)] h-[calc(100vh-72px)]">
-        <img
-          src={"/images/cover.jpg"}
-          alt="Background"
-          className="h-full w-full object-cover"
-        />
+        <ImageCarousel />
       </div>
 
       <div className="absolute inset-0 z-10 lg:mt-[98px] mt-[70px] flex lg:h-[calc(100vh-80px)] h-[calc(100vh-72px)] flex-col items-center justify-center bg-black/30 text-white backdrop-blur-sm">
