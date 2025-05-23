@@ -70,5 +70,7 @@
   "message_placeholder": "Unesite svoju poruku",
   "country_code": "** Unesite broj telefona s pozivnim brojem države (npr. +385 za Hrvatsku)",
   "field_required": "Polja označena * su obavezna",
-  "navbar-bookNow": "Rezerviraj sada"
+  "navbar-bookNow": "Rezerviraj sada",
+  "fleet_title": "Naša premium vozila",
+  "fleet_text": "Doživite luksuz i udobnost s našim Mercedes-Benz taksijima."
 }

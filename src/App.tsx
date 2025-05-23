@@ -8,6 +8,7 @@ import { CardDestination } from "./components/CardDestination";
 import EmailContactForm from "./components/EmailContactForm";
 import emailjs from "@emailjs/browser";
 import { Suspense, lazy, useEffect } from "react";
+import Slider from "./components/Slider";
 
 const ImageCarousel = lazy(() => import("./components/ImageCarousel"));
 
@@ -149,6 +150,14 @@ function App() {
             />
           </div>
         </div>
+      </div>
+
+      <div id="fleet" className="bg-[#F5F5F5] py-[100px]">
+        <p className="text-center text-[32px] font-bold">{t("fleet_title")}</p>
+        <div className="mx-auto mt-[20px] h-1 w-[100px] bg-yellow-300"></div>
+        <p className="text-center mt-[10px] mb-[40px]">{t("fleet_text")}</p>
+
+        <Slider />
       </div>
 
       <div className="bg-[#1B1B1B] px-6 pb-10 pt-28 text-white text-center lg:text-start">
