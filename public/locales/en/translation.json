@@ -70,5 +70,7 @@
   "message_placeholder": "Enter your message",
   "country_code": "** Enter the phone number with the country code (e.g. +385 for Croatia)",
   "field_required": "Fields marked with * are required",
-  "navbar-bookNow": "Book Now"
+  "navbar-bookNow": "Book Now",
+  "fleet_title": "Our Premium Fleet",
+  "fleet_text": "Experience luxury and comfort with our Mercedes-Benz taxis."
 }
