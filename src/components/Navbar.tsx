@@ -19,11 +19,11 @@ export default function Navbar() {
         <a href="#top" className="flex gap-2 flex-row items-center">
           <img
             className="w-[22px] h-[22px]"
-            src={"/icons/taxi-fill.png"}
+            src={"/icons/logo.png"}
             alt="Description of the image"
           />
-          <p className="text-[28px] font-bold uppercase text-yellow-300">
-            DIADORA
+          <p className="text-[22px] font-bold  text-yellow-300">
+            DIADORA <span className="text-white">Zadar</span>
           </p>
         </a>
         <div className="z-50 flex gap-8 items-center">
@@ -77,8 +77,8 @@ export default function Navbar() {
               src={"/icons/taxi-fill.png"}
               alt="Description of the image"
             />
-            <p className="text-xl font-bold uppercase text-yellow-300">
-              DIADORA
+            <p className="text-xl font-bold  text-yellow-300">
+              DIADORA <span className="text-white">Zadar</span>
             </p>
           </a>
 
