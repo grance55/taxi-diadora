@@ -19,7 +19,7 @@ export default function Navbar() {
         <a href="#top" className="flex gap-2 flex-row items-center">
           <img
             className="w-[22px] h-[22px]"
-            src={"/icons/logo.png"}
+            src={"/icons/taxi-fill.png"}
             alt="Description of the image"
           />
           <p className="text-[22px] font-bold  text-yellow-300">
