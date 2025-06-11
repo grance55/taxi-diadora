@@ -17,6 +17,26 @@ export default function Slider() {
       image: "/images/car3.jpeg",
       alt: "Zadar taxi service",
     },
+    {
+      id: 4,
+      image: "/images/van1.jpeg",
+      alt: "Zadar taxi service",
+    },
+    {
+      id: 5,
+      image: "/images/van2.jpeg",
+      alt: "Zadar taxi van service",
+    },
+    {
+      id: 6,
+      image: "/images/van3.jpeg",
+      alt: "Taxi service in Zadar",
+    },
+    {
+      id: 7,
+      image: "/images/van4.jpeg",
+      alt: "Zadar taxi van service",
+    },
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
